@@ -17,20 +17,21 @@ public class BoardDeletionTests extends TestBase {
     public void testBoardDeletion() throws InterruptedException {
         Thread.sleep(5000);
         int boardCount = getBoardsCount();
-        //  while(boardCount > 1) {
+        System.out.println("boardCount = " + boardCount);
+          while(boardCount > 1) {
         selectFirstBoard();
         openMenu();
         deleteBoard();
         returnOnHomePage();
         boardCount--;
-        //  }
+          }
         System.out.println("boardCount = " + boardCount);
         // Assert.
     }
 
     private int getBoardsCount() {
         return wd.findElements(By.xpath
-                ("//*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..")).size() - 1;
+                ("//*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li")).size() - 1;
     }
 
     private void selectFirstBoard() {
@@ -38,7 +39,10 @@ public class BoardDeletionTests extends TestBase {
     }
 
     private void openMenu() {
-        click(By.xpath("//span[.='Show menu']"));
+        if(isElementDisplayed(By.cssSelector(".js-show-sidebar"))){
+            click(By.cssSelector(".js-show-sidebar"));
+        }
+       // click(By.xpath("//span[.='Show menu']"));
     }
 
     private void deleteBoard() {
