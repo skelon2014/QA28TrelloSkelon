@@ -33,6 +33,7 @@ public class TestBase {
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         openSite("https://trello.com/");
     }
+
     public void stop() {
         //wd.quit();
     }
@@ -71,16 +72,18 @@ public class TestBase {
     public void clickOnAvatar() {
         click(By.cssSelector("[data-test-id='header-member-menu-button']"));
     }
+
     public void selectLogoutFromDropDownList() {
         click(By.cssSelector("[data-test-id='header-member-menu-logout']"));
     }
+
     public void confirmLogout() {
         click(By.cssSelector("[data-testid='logout-button']"));
     }
+
     public boolean checkUserLoggedOut() {
         return wd.getCurrentUrl().equals("https://trello.com/logged-out");
     }
-
 
 
     //===========================================================
@@ -96,7 +99,7 @@ public class TestBase {
     }
 
     public void confirmLogin() {
-         click(By.xpath("//button[@id='login-submit']"));
+        click(By.xpath("//button[@id='login-submit']"));
     }
 
     public void waitForElement(By locator, int timeOut) {
@@ -123,20 +126,25 @@ public class TestBase {
     public String getTitle() {
         return wd.findElement(By.xpath("//h1")).getText();
     }
+
     public boolean isElementPresent(By locator) {
-        return  wd.findElements(locator).size()>0;
+        return wd.findElements(locator).size() > 0;
     }
 
-    public boolean waitForElementPresent(By locator, int timeOut){
-       return new WebDriverWait(wd, timeOut).
-               until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator)).size()>0;
+    public boolean isElementDisplayed(By locator) {
+        return wd.findElement(locator).isDisplayed();
     }
 
-    public boolean waitForElementPresentTryCatch(By locator,int timeOut){
-        try{
-            waitForElement(locator,timeOut);
+    public boolean waitForElementPresent(By locator, int timeOut) {
+        return new WebDriverWait(wd, timeOut).
+                until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator)).size() > 0;
+    }
+
+    public boolean waitForElementPresentTryCatch(By locator, int timeOut) {
+        try {
+            waitForElement(locator, timeOut);
             return true;
-        }catch (NoSuchElementException e){
+        } catch (NoSuchElementException e) {
             return false;
         }
     }
@@ -144,6 +152,7 @@ public class TestBase {
     public boolean isAvatarPresent() {
         return isElementPresent(By.xpath("//*[@data-test-id='header-member-menu-button']"));
     }
+
     public void waitForAddListButtonInTheBoard() {
         waitForElement(By.cssSelector(".open-add-list"), 15);
     }
