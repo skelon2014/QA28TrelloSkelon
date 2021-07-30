@@ -1,5 +1,6 @@
-package com.telran.qa28.skelon;
+package com.telran.qa28.skelon.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -14,17 +15,14 @@ public class BoardDeletionTests extends TestBase {
     @Test
     public void testBoardDeletion() throws InterruptedException {
         Thread.sleep(4000);
-        int boardCount = app.getBoard().getBoardsCount();
-        System.out.println("boardCount = " + boardCount);
-          while(boardCount > 1) {
+        int before = app.getBoard().getBoardsCount();
+
         app.getBoard().selectFirstBoard();
         app.getBoard().openMenu();
         app.getBoard().deleteBoard();
         app.getBoard().returnOnHomePage();
-        boardCount = app.getBoard().getBoardsCount();
-          }
-        System.out.println("boardCount = " + boardCount);
-        // Assert.
-    }
+        int after = app.getBoard().getBoardsCount();
 
+        Assert.assertEquals(after, before - 1);
+    }
 }

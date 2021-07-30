@@ -1,12 +1,8 @@
-package com.telran.qa28.skelon;
+package com.telran.qa28.skelon.framework;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
@@ -25,7 +21,7 @@ public class ApplicationManager {
     }
 
     public void stop() {
-        //wd.quit();
+        wd.quit();
     }
 
     //==================================================

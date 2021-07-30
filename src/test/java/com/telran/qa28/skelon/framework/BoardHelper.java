@@ -1,19 +1,18 @@
-package com.telran.qa28.skelon;
+package com.telran.qa28.skelon.framework;
 
+import com.telran.qa28.skelon.model.Board;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
-import java.util.NoSuchElementException;
-
-public class BoardHelper extends HelperBase{
+public class BoardHelper extends HelperBase {
     public BoardHelper(WebDriver wd) {
         super(wd);
     }
 
-    public void fillBoardCreation(String boardName) {
-        type(By.xpath("//*[@data-test-id='create-board-title-input']"), boardName);
+    public void fillBoardCreation(Board board) {
+        type(By.xpath("//*[@data-test-id='create-board-title-input']"), board.getBoardName());
     }
 
     public void selectCreateBoard() {
@@ -42,25 +41,56 @@ public class BoardHelper extends HelperBase{
     }
 
     public void openMenu() {
-        if(isElementDisplayed(By.cssSelector(".js-show-sidebar"))){
+        if (isElementDisplayed(By.cssSelector(".js-show-sidebar"))) {
             click(By.cssSelector(".js-show-sidebar"));
         }
-       // click(By.xpath("//span[.='Show menu']"));
+        // click(By.xpath("//span[.='Show menu']"));
     }
 
     public void deleteBoard() {
-        if (!isElementDisplayed(By.cssSelector(".js-open-more"))) {
+        if (!isElementPresent(By.cssSelector(".js-open-more"))) {
             click(By.cssSelector(".icon-back"));
         }
         click(By.cssSelector(".js-open-more"));
 
         click(By.cssSelector(".js-close-board"));
-        click(By.cssSelector(".js-confirm"));
+        confirmAction();
         click(By.cssSelector(".js-delete"));
-        click(By.cssSelector(".js-confirm"));
+        confirmAction();
     }
+
     public boolean isAvatarBoardPresent() {
         return waitForElementPresent(By.xpath("//ul[@class = 'boards-page-board-section-list']"), 20);
     }
 
+    public void clearBoardsList() throws InterruptedException {
+        int boardCount = getBoardsCount();
+        while (boardCount > 4) {
+            selectFirstBoard();
+            openMenu();
+            deleteBoard();
+            returnOnHomePage();
+            Thread.sleep(2000);
+            getBoardsCount();
+        }
+    }
+
+    public boolean isThereABoard() {
+        return getBoardsCount() > 0;
+    }
+
+    public void createBoard() {
+        clickOnPlusButton();
+        selectCreateBoard();
+        fillBoardCreation(new Board().setBoardName("Experiment"));
+        confirmBoardCreation();
+        returnOnHomePage();
+
+    }
+
+    public void editBoardName(String name) {
+        click(By.cssSelector(".mod-board-name"));
+        wd.findElement(By.cssSelector(".js-board-name-input")).sendKeys(name + Keys.ENTER);
+
+    }
 }

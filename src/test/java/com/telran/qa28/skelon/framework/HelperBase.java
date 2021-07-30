@@ -1,4 +1,4 @@
-package com.telran.qa28.skelon;
+package com.telran.qa28.skelon.framework;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,9 +19,12 @@ public class HelperBase {
     }
 
     public void type(By locator, String text) {
-        click(locator);
-        wd.findElement(locator).clear();
-        wd.findElement(locator).sendKeys(text);
+        if (text != null) {
+            click(locator);
+            wd.findElement(locator).clear();
+            wd.findElement(locator).sendKeys(text);
+        }
+
     }
 
     public void waitForElement(By locator, int timeOut) {
@@ -58,5 +61,9 @@ public class HelperBase {
     public void returnOnHomePage() {
         waitForElement(By.cssSelector("[aria-label='HouseIcon']"), 20);
         click(By.cssSelector("[aria-label='HouseIcon']"));
+    }
+
+    public void confirmAction() {
+        click(By.cssSelector(".js-confirm"));
     }
 }

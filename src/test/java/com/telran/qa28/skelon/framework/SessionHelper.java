@@ -1,11 +1,10 @@
-package com.telran.qa28.skelon;
+package com.telran.qa28.skelon.framework;
 
+import com.telran.qa28.skelon.model.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class SessionHelper extends HelperBase{
+public class SessionHelper extends HelperBase {
     public SessionHelper(WebDriver wd) {
         super(wd);
     }
@@ -48,11 +47,11 @@ public class SessionHelper extends HelperBase{
         click(By.xpath("//a[@href='/login']"));
     }
 
-    public void fillLoginForm(String email, String password) throws InterruptedException {
-        type(By.xpath("//*[@name = 'user']"), email);
+    public void fillLoginForm(User user) throws InterruptedException {
+        type(By.xpath("//*[@name = 'user']"), user.getEmail());
         click(By.xpath("//input[@id='login']"));
         Thread.sleep(2000);
-        type(By.xpath("//*[@name = 'password']"), password);
+        type(By.xpath("//*[@name = 'password']"), user.getPassword());
     }
 
     public void confirmLogin() {
@@ -62,8 +61,12 @@ public class SessionHelper extends HelperBase{
     public boolean isAvatarPresent() {
         return isElementPresent(By.xpath("//*[@data-test-id='header-member-menu-button']"));
     }
+
     public boolean isAvatarBoardPresent() {
         return waitForElementPresent(By.xpath("//ul[@class = 'boards-page-board-section-list']"), 20);
     }
 
+    public boolean isErrorPresent() {
+        return isElementPresent(By.cssSelector("#password-error"));
+    }
 }
