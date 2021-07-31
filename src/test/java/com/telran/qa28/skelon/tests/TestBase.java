@@ -16,9 +16,9 @@ public class TestBase {
         app.init();
     }
 
-    @AfterSuite
+    @AfterSuite//(enabled = false)
     public void tearDown() throws InterruptedException {
-        app.getBoard().clearBoardsList();
+        app.board().clearBoardsList();
         app.stop();
     }
 

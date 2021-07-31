@@ -7,21 +7,21 @@ import org.testng.annotations.Test;
 public class BoardDeletionTests extends TestBase {
     @BeforeMethod
     public void preConditions() throws InterruptedException {
-        if (!app.getSession().isAvatarPresent()) {
-            app.getSession().login("skelon@bk.ru", "Sand2@14");
+        if (!app.session().isAvatarPresent()) {
+            app.session().login("skelon@bk.ru", "Sand2@14");
         }
     }
 
     @Test
     public void testBoardDeletion() throws InterruptedException {
         Thread.sleep(4000);
-        int before = app.getBoard().getBoardsCount();
+        int before = app.board().getBoardsCount();
 
-        app.getBoard().selectFirstBoard();
-        app.getBoard().openMenu();
-        app.getBoard().deleteBoard();
-        app.getBoard().returnOnHomePage();
-        int after = app.getBoard().getBoardsCount();
+        app.board().selectFirstBoard();
+        app.board().openMenu();
+        app.board().deleteBoard();
+        app.board().returnOnHomePage();
+        int after = app.board().getBoardsCount();
 
         Assert.assertEquals(after, before - 1);
     }

@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 public class BoardCreationTests extends TestBase {
     @BeforeMethod
     public void preConditions() throws InterruptedException {
-        if (!app.getSession().isAvatarPresent()) {
-            app.getSession().login("skelon@bk.ru", "Sand2@14");
+        if (!app.session().isAvatarPresent()) {
+            app.session().login("skelon@bk.ru", "Sand2@14");
         }
     }
 
@@ -18,21 +18,22 @@ public class BoardCreationTests extends TestBase {
 
         String boardName = "Board-QA28-" + System.currentTimeMillis() / 3600000;
         Thread.sleep(5000);
-        int before = app.getBoard().getBoardsCount();
+        int before = app.board().getBoardsCount();
       //  app.getBoard().createBoard();
 
-       app.getBoard().clickOnPlusButton();
-       app.getBoard().selectCreateBoard();
-       app.getBoard().fillBoardCreation(new Board().setBoardName(boardName));
-       app.getBoard().confirmBoardCreation();
-        app.getBoard().waitForAddListButtonInTheBoard();
-        String title = app.getBoard().getTitle();
+       app.board().clickOnPlusButton();
+       app.board().selectCreateBoard();
+       app.board().fillBoardCreation(new Board().withBoardName(boardName));
+       app.board().confirmBoardCreation();
+        app.board().waitForAddListButtonInTheBoard();
+        String title = app.board().getTitle();
         Assert.assertEquals(title, boardName);
 
-        app.getBoard().returnOnHomePage();
+        app.board().returnOnHomePage();
         Thread.sleep(2000);
-        int after = app.getBoard().getBoardsCount();
+        int after = app.board().getBoardsCount();
         Assert.assertEquals(after, before + 1);
+        System.out.println("Boards - " + after);
     }
 }
 

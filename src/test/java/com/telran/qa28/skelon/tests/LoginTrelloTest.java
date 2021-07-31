@@ -8,31 +8,31 @@ import org.testng.annotations.Test;
 public class LoginTrelloTest extends TestBase {
     @BeforeMethod
     public void preConditions(){
-        if(app.getSession().isAvatarPresent()){
-            app.getSession().logout();
+        if(app.session().isAvatarPresent()){
+            app.session().logout();
         }
     }
 
     @Test
     public void loginLogoutTest() throws InterruptedException {
-        User user = new User().setEmail("skelon@bk.ru").setPassword("Sand2@14");
+        User user = new User().withEmail("skelon@bk.ru").withPassword("Sand2@14");
 
-        app.getSession().clickOnLogin();
-        app.getSession().fillLoginForm(user);
-        app.getSession().confirmLogin();
-        Assert.assertTrue(app.getSession().isAvatarBoardPresent());
-        app.getSession().logout();
-        Assert.assertTrue(app.getSession().checkUserLoggedOut());
+        app.session().clickOnLogin();
+        app.session().fillLoginForm(user);
+        app.session().confirmLogin();
+        Assert.assertTrue(app.session().isAvatarBoardPresent());
+        app.session().logout();
+        Assert.assertTrue(app.session().checkUserLoggedOut());
     }
 
     @Test
     public void negativeLoginLogoutTestwithoutPassword() throws InterruptedException {
-        User user = new User().setEmail("skelon@bk.ru");
+        User user = new User().withEmail("skelon@bk.ru");
 
-        app.getSession().clickOnLogin();
-        app.getSession().fillLoginForm(user);
-        app.getSession().confirmLogin();
-        Assert.assertTrue(app.getSession().isErrorPresent(),"Error is not present");
+        app.session().clickOnLogin();
+        app.session().fillLoginForm(user);
+        app.session().confirmLogin();
+        Assert.assertTrue(app.session().isErrorPresent(),"Error is not present");
         //  app.getSession().logout();
         //  Assert.assertTrue(app.getSession().checkUserLoggedOut());
     }

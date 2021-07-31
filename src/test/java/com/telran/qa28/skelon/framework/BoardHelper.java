@@ -4,7 +4,6 @@ import com.telran.qa28.skelon.model.Board;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 
 public class BoardHelper extends HelperBase {
     public BoardHelper(WebDriver wd) {
@@ -71,7 +70,7 @@ public class BoardHelper extends HelperBase {
             deleteBoard();
             returnOnHomePage();
             Thread.sleep(2000);
-            getBoardsCount();
+            boardCount--;
         }
     }
 
@@ -82,7 +81,7 @@ public class BoardHelper extends HelperBase {
     public void createBoard() {
         clickOnPlusButton();
         selectCreateBoard();
-        fillBoardCreation(new Board().setBoardName("Experiment"));
+        fillBoardCreation(new Board().withBoardName("Experiment"));
         confirmBoardCreation();
         returnOnHomePage();
 

@@ -18,6 +18,13 @@ public class HelperBase {
         wd.findElement(locator).click();
     }
 
+    public void waitForElementAndclick(By locator, int time) {
+        new WebDriverWait(wd, time)
+                .until(ExpectedConditions.elementToBeClickable(locator)).click();
+
+        //  wd.findElement(locator).click();
+    }
+
     public void type(By locator, String text) {
         if (text != null) {
             click(locator);

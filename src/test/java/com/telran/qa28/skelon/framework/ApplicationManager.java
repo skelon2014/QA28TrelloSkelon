@@ -9,6 +9,8 @@ public class ApplicationManager {
     WebDriver wd;
     BoardHelper board;
     SessionHelper session;
+    ListHelper list;
+    CardHelper card;
 
     //=======================================================
     public void init() {
@@ -18,10 +20,8 @@ public class ApplicationManager {
         openSite("https://trello.com/");
         board = new BoardHelper(wd);
         session = new SessionHelper(wd);
-    }
-
-    public void stop() {
-        wd.quit();
+        list = new ListHelper(wd);
+        card = new CardHelper(wd);
     }
 
     //==================================================
@@ -29,11 +29,23 @@ public class ApplicationManager {
         wd.get(url);
     }
 
-    public BoardHelper getBoard() {
+    public BoardHelper board() {
         return board;
     }
 
-    public SessionHelper getSession() {
+    public SessionHelper session() {
         return session;
+    }
+
+    public ListHelper list() {
+        return list;
+    }
+
+    public CardHelper card() {
+        return card;
+    }
+//===============================================================
+    public void stop() {
+        wd.quit();
     }
 }
