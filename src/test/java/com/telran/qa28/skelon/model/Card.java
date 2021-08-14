@@ -21,4 +21,5 @@ public class Card {
         this.name = name;
         return this;
     }
+
 }

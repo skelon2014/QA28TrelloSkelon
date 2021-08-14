@@ -50,6 +50,10 @@ public class BoardHelper extends HelperBase {
         if (!isElementPresent(By.cssSelector(".js-open-more"))) {
             click(By.cssSelector(".icon-back"));
         }
+        if(isElementPresent(By.cssSelector("[title='QR Code']"))){
+            click(By.cssSelector("button[aria-lable='Close popover']"));
+        }
+
         click(By.cssSelector(".js-open-more"));
 
         click(By.cssSelector(".js-close-board"));
@@ -64,7 +68,7 @@ public class BoardHelper extends HelperBase {
 
     public void clearBoardsList() throws InterruptedException {
         int boardCount = getBoardsCount();
-        while (boardCount > 4) {
+        while (boardCount > 1) {
             selectFirstBoard();
             openMenu();
             deleteBoard();
@@ -87,9 +91,16 @@ public class BoardHelper extends HelperBase {
 
     }
 
-    public void editBoardName(String name) {
+    public void editBoardName(String name) throws InterruptedException {
+        Thread.sleep(2000);
         click(By.cssSelector(".mod-board-name"));
         wd.findElement(By.cssSelector(".js-board-name-input")).sendKeys(name + Keys.ENTER);
 
+    }
+
+    public boolean isOnTheBoardsPage() {
+      return  isElementPresent(By.xpath
+                ("//*[contains(@class, 'boards-page-board-section-header-icon-default-image')]" +
+                        "/../../../..//li"));
     }
 }

@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.qa28.skelon.tests.BoardCreationTests" tests="11" skipped="0" failures="3" errors="0" timestamp="2021-08-13T15:36:16" hostname="DESKTOP-V8HD5F2" time="108.813">
+  <properties/>
+  <testcase name="boardCreationTest" classname="com.telran.qa28.skelon.tests.BoardCreationTests" time="13.442"/>
+  <testcase name="boardCreationTestDataProvider1[0](a)" classname="com.telran.qa28.skelon.tests.BoardCreationTests" time="9.89"/>
+  <testcase name="boardCreationTestDataProvider1[1](123456)" classname="com.telran.qa28.skelon.tests.BoardCreationTests" time="10.28"/>
+  <testcase name="boardCreationTestDataProvider1[2](QWERTY)" classname="com.telran.qa28.skelon.tests.BoardCreationTests" time="9.953"/>
+  <testcase name="boardCreationTestDataProvider1[3](@#$%^)" classname="com.telran.qa28.skelon.tests.BoardCreationTests" time="10.473"/>
+  <testcase name="boardCreationTestDataProvider1[4](A S D F)" classname="com.telran.qa28.skelon.tests.BoardCreationTests" time="10.194"/>
+  <testcase name="boardCreationTestDataProviderCSV[0](Board{boardName='qwerty1'})" classname="com.telran.qa28.skelon.tests.BoardCreationTests" time="9.097"/>
+  <testcase name="boardCreationTestDataProviderCSV[1](Board{boardName='123456$'})" classname="com.telran.qa28.skelon.tests.BoardCreationTests" time="9.118"/>
+  <testcase name="boardCreationTestDataProviderCSV[2](Board{boardName='AAAAAAAAAAA'})" classname="com.telran.qa28.skelon.tests.BoardCreationTests" time="15.139">
+    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@data-test-id='create-board-submit-button']&quot;}&#10;  (Session info: chrome=92.0.4515.131)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-V8HD5F2', ip: '192.168.1.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60199}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6a16bf4b8b1a0712e4acef6fd42bb24e&#10;*** Element info: {Using=xpath, value=//*[@data-test-id='create-board-submit-button']}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@data-test-id='create-board-submit-button']&quot;}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-V8HD5F2', ip: '192.168.1.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60199}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a16bf4b8b1a0712e4acef6fd42bb24e
+*** Element info: {Using=xpath, value=//*[@data-test-id='create-board-submit-button']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy15.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at com.telran.qa28.skelon.framework.HelperBase.click(HelperBase.java:18)
+	at com.telran.qa28.skelon.framework.BoardHelper.confirmBoardCreation(BoardHelper.java:22)
+	at com.telran.qa28.skelon.tests.BoardCreationTests.boardCreationTestDataProviderCSV(BoardCreationTests.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</failure>
+  </testcase>
+  <testcase name="boardCreationTestDataProviderCSV[3](Board{boardName='A B C'})" classname="com.telran.qa28.skelon.tests.BoardCreationTests" time="5.5">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;_2Hkk1T39xw4RMQ _3TTqkG5muwOzqZ ZOUktZwsING7-0 _3LWeD13GUCngAu&quot; data-test-id=&quot;header-create-menu-button&quot; type=&quot;button&quot; aria-label=&quot;Create board or Workspace&quot;&gt;...&lt;/button&gt; is not clickable at point (1238, 20). Other element would receive the click: &lt;div class=&quot;_343EhxI8lu8-ih _2E51xGpnYJSdNA _25mU3FaRo7l95D&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=92.0.4515.131)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-V8HD5F2', ip: '192.168.1.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60199}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6a16bf4b8b1a0712e4acef6fd42bb24e" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;_2Hkk1T39xw4RMQ _3TTqkG5muwOzqZ ZOUktZwsING7-0 _3LWeD13GUCngAu&quot; data-test-id=&quot;header-create-menu-button&quot; type=&quot;button&quot; aria-label=&quot;Create board or Workspace&quot;&gt;...&lt;/button&gt; is not clickable at point (1238, 20). Other element would receive the click: &lt;div class=&quot;_343EhxI8lu8-ih _2E51xGpnYJSdNA _25mU3FaRo7l95D&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=92.0.4515.131)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-V8HD5F2', ip: '192.168.1.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60199}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a16bf4b8b1a0712e4acef6fd42bb24e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.telran.qa28.skelon.framework.HelperBase.click(HelperBase.java:18)
+	at com.telran.qa28.skelon.framework.HelperBase.clickOnPlusButton(HelperBase.java:43)
+	at com.telran.qa28.skelon.tests.BoardCreationTests.boardCreationTestDataProviderCSV(BoardCreationTests.java:108)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</failure>
+  </testcase>
+  <testcase name="boardCreationTestDataProviderCSV[4](Board{boardName='A1$s'})" classname="com.telran.qa28.skelon.tests.BoardCreationTests" time="5.4">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;_2Hkk1T39xw4RMQ _3TTqkG5muwOzqZ ZOUktZwsING7-0 _3LWeD13GUCngAu&quot; data-test-id=&quot;header-create-menu-button&quot; type=&quot;button&quot; aria-label=&quot;Create board or Workspace&quot;&gt;...&lt;/button&gt; is not clickable at point (1238, 20). Other element would receive the click: &lt;div class=&quot;_343EhxI8lu8-ih _2E51xGpnYJSdNA _25mU3FaRo7l95D&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=92.0.4515.131)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-V8HD5F2', ip: '192.168.1.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60199}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6a16bf4b8b1a0712e4acef6fd42bb24e" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;_2Hkk1T39xw4RMQ _3TTqkG5muwOzqZ ZOUktZwsING7-0 _3LWeD13GUCngAu&quot; data-test-id=&quot;header-create-menu-button&quot; type=&quot;button&quot; aria-label=&quot;Create board or Workspace&quot;&gt;...&lt;/button&gt; is not clickable at point (1238, 20). Other element would receive the click: &lt;div class=&quot;_343EhxI8lu8-ih _2E51xGpnYJSdNA _25mU3FaRo7l95D&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=92.0.4515.131)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-V8HD5F2', ip: '192.168.1.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60199}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a16bf4b8b1a0712e4acef6fd42bb24e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.telran.qa28.skelon.framework.HelperBase.click(HelperBase.java:18)
+	at com.telran.qa28.skelon.framework.HelperBase.clickOnPlusButton(HelperBase.java:43)
+	at com.telran.qa28.skelon.tests.BoardCreationTests.boardCreationTestDataProviderCSV(BoardCreationTests.java:108)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</failure>
+  </testcase>
+  <system-out><![CDATA[18:36:16 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTest started with parametres - []
+18:36:16 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-member-menu-button']
+18:36:16 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-member-menu-button'] found
+18:36:21 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+18:36:21 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+18:36:21 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-menu-button']
+18:36:21 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-menu-button'] found
+18:36:21 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-board-button']
+18:36:21 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-board-button'] found
+18:36:21 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:36:21 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:36:22 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:36:22 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:36:22 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:36:22 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:36:23 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-submit-button']
+18:36:23 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-submit-button'] found
+18:36:23 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: .open-add-list
+18:36:27 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: .open-add-list found
+18:36:27 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //h1
+18:36:27 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //h1 found
+18:36:27 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+18:36:27 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+18:36:27 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+18:36:27 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+18:36:29 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+18:36:29 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+Boards - 3
+18:36:29 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTest finished
+18:36:29 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProvider1 started with parametres - [a]
+18:36:29 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-member-menu-button']
+18:36:29 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-member-menu-button'] found
+18:36:34 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+18:36:34 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+18:36:34 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-menu-button']
+18:36:34 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-menu-button'] found
+18:36:35 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-board-button']
+18:36:35 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-board-button'] found
+18:36:35 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:36:35 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:36:35 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:36:35 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:36:35 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:36:35 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:36:35 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-submit-button']
+18:36:35 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-submit-button'] found
+18:36:35 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: .open-add-list
+18:36:37 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: .open-add-list found
+18:36:37 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //h1
+18:36:37 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //h1 found
+18:36:37 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+18:36:37 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+18:36:37 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+18:36:37 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+18:36:39 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+18:36:39 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+Boards - 4
+18:36:39 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProvider1 finished
+18:36:39 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProvider1 started with parametres - [123456]
+18:36:39 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-member-menu-button']
+18:36:39 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-member-menu-button'] found
+18:36:44 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+18:36:44 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+18:36:44 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-menu-button']
+18:36:44 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-menu-button'] found
+18:36:44 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-board-button']
+18:36:44 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-board-button'] found
+18:36:45 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:36:45 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:36:45 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:36:45 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:36:45 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:36:45 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:36:45 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-submit-button']
+18:36:45 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-submit-button'] found
+18:36:45 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: .open-add-list
+18:36:47 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: .open-add-list found
+18:36:47 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //h1
+18:36:47 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //h1 found
+18:36:47 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+18:36:47 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+18:36:47 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+18:36:47 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+18:36:50 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+18:36:50 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+Boards - 5
+18:36:50 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProvider1 finished
+18:36:50 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProvider1 started with parametres - [QWERTY]
+18:36:50 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-member-menu-button']
+18:36:50 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-member-menu-button'] found
+18:36:55 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+18:36:55 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+18:36:55 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-menu-button']
+18:36:55 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-menu-button'] found
+18:36:55 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-board-button']
+18:36:55 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-board-button'] found
+18:36:55 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:36:55 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:36:55 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:36:55 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:36:55 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:36:55 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:36:55 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-submit-button']
+18:36:55 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-submit-button'] found
+18:36:56 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: .open-add-list
+18:36:57 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: .open-add-list found
+18:36:57 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //h1
+18:36:57 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //h1 found
+18:36:57 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+18:36:57 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+18:36:57 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+18:36:57 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+18:37:00 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+18:37:00 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+Boards - 6
+18:37:00 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProvider1 finished
+18:37:00 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProvider1 started with parametres - [@#$%^]
+18:37:00 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-member-menu-button']
+18:37:00 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-member-menu-button'] found
+18:37:05 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+18:37:05 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+18:37:05 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-menu-button']
+18:37:05 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-menu-button'] found
+18:37:05 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-board-button']
+18:37:05 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-board-button'] found
+18:37:05 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:37:05 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:37:05 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:37:05 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:37:05 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:37:05 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:37:06 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-submit-button']
+18:37:06 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-submit-button'] found
+18:37:06 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: .open-add-list
+18:37:07 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: .open-add-list found
+18:37:07 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //h1
+18:37:08 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //h1 found
+18:37:08 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+18:37:08 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+18:37:08 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+18:37:08 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+18:37:10 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+18:37:10 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+Boards - 7
+18:37:10 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProvider1 finished
+18:37:10 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProvider1 started with parametres - [A S D F]
+18:37:10 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-member-menu-button']
+18:37:10 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-member-menu-button'] found
+18:37:15 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+18:37:15 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+18:37:15 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-menu-button']
+18:37:15 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-menu-button'] found
+18:37:15 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-board-button']
+18:37:15 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-board-button'] found
+18:37:15 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:37:15 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:37:16 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:37:16 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:37:16 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:37:16 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:37:16 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-submit-button']
+18:37:16 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-submit-button'] found
+18:37:16 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: .open-add-list
+18:37:18 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: .open-add-list found
+18:37:18 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //h1
+18:37:18 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //h1 found
+18:37:18 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+18:37:18 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+18:37:18 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+18:37:18 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+18:37:20 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+18:37:20 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+Boards - 8
+18:37:20 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProvider1 finished
+18:37:20 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProviderCSV started with parametres - [Board{boardName='qwerty1'}]
+18:37:20 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-member-menu-button']
+18:37:20 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-member-menu-button'] found
+18:37:24 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+18:37:24 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+18:37:24 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-menu-button']
+18:37:24 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-menu-button'] found
+18:37:24 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-board-button']
+18:37:25 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-board-button'] found
+18:37:25 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:37:25 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:37:25 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:37:25 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:37:25 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:37:25 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:37:25 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-submit-button']
+18:37:25 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-submit-button'] found
+18:37:25 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: .open-add-list
+18:37:27 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: .open-add-list found
+18:37:27 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //h1
+18:37:27 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //h1 found
+18:37:27 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+18:37:27 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+18:37:27 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+18:37:27 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+18:37:29 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+18:37:29 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+Boards - 9
+18:37:29 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProviderCSV finished
+18:37:29 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProviderCSV started with parametres - [Board{boardName='123456$'}]
+18:37:29 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-member-menu-button']
+18:37:29 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-member-menu-button'] found
+18:37:33 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+18:37:33 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+18:37:33 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-menu-button']
+18:37:33 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-menu-button'] found
+18:37:34 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-board-button']
+18:37:34 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-board-button'] found
+18:37:34 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:37:34 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:37:34 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:37:34 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:37:34 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:37:34 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:37:34 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-submit-button']
+18:37:34 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-submit-button'] found
+18:37:34 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: .open-add-list
+18:37:36 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: .open-add-list found
+18:37:36 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //h1
+18:37:36 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //h1 found
+18:37:36 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+18:37:36 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+18:37:36 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+18:37:36 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+18:37:39 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+18:37:39 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+Boards - 10
+18:37:39 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProviderCSV finished
+18:37:39 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProviderCSV started with parametres - [Board{boardName='AAAAAAAAAAA'}]
+18:37:39 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-member-menu-button']
+18:37:39 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-member-menu-button'] found
+18:37:43 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+18:37:43 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+18:37:43 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-menu-button']
+18:37:43 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-menu-button'] found
+18:37:43 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-board-button']
+18:37:43 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-board-button'] found
+18:37:43 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:37:43 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:37:43 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:37:43 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:37:43 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-title-input']
+18:37:43 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='create-board-title-input'] found
+18:37:43 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='create-board-submit-button']
+18:37:53 ERROR c.t.q.s.tests.TestBase$MyListener - ERROR!!! TEST FAILED!!!
+
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@data-test-id='create-board-submit-button']"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-V8HD5F2', ip: '192.168.1.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60199}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a16bf4b8b1a0712e4acef6fd42bb24e
+*** Element info: {Using=xpath, value=//*[@data-test-id='create-board-submit-button']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy15.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at com.telran.qa28.skelon.framework.HelperBase.click(HelperBase.java:18)
+	at com.telran.qa28.skelon.framework.BoardHelper.confirmBoardCreation(BoardHelper.java:22)
+	at com.telran.qa28.skelon.tests.BoardCreationTests.boardCreationTestDataProviderCSV(BoardCreationTests.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+18:37:54 ERROR c.t.q.s.tests.TestBase$MyListener - screenshot - ScreenShots/screen-1628869.png
+18:37:54 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProviderCSV finished
+18:37:54 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProviderCSV started with parametres - [Board{boardName='A B C'}]
+18:37:54 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-member-menu-button']
+18:37:54 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-member-menu-button'] found
+18:37:58 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+18:37:58 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+18:37:58 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-menu-button']
+18:37:58 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-menu-button'] found
+18:37:59 ERROR c.t.q.s.tests.TestBase$MyListener - ERROR!!! TEST FAILED!!!
+
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="_2Hkk1T39xw4RMQ _3TTqkG5muwOzqZ ZOUktZwsING7-0 _3LWeD13GUCngAu" data-test-id="header-create-menu-button" type="button" aria-label="Create board or Workspace">...</button> is not clickable at point (1238, 20). Other element would receive the click: <div class="_343EhxI8lu8-ih _2E51xGpnYJSdNA _25mU3FaRo7l95D">...</div>
+  (Session info: chrome=92.0.4515.131)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-V8HD5F2', ip: '192.168.1.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60199}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a16bf4b8b1a0712e4acef6fd42bb24e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.telran.qa28.skelon.framework.HelperBase.click(HelperBase.java:18)
+	at com.telran.qa28.skelon.framework.HelperBase.clickOnPlusButton(HelperBase.java:43)
+	at com.telran.qa28.skelon.tests.BoardCreationTests.boardCreationTestDataProviderCSV(BoardCreationTests.java:108)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+18:37:59 ERROR c.t.q.s.tests.TestBase$MyListener - screenshot - ScreenShots/screen-1628869.png
+18:37:59 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProviderCSV finished
+18:37:59 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProviderCSV started with parametres - [Board{boardName='A1$s'}]
+18:37:59 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-member-menu-button']
+18:37:59 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-member-menu-button'] found
+18:38:03 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+18:38:03 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+18:38:03 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-create-menu-button']
+18:38:03 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-create-menu-button'] found
+18:38:04 ERROR c.t.q.s.tests.TestBase$MyListener - ERROR!!! TEST FAILED!!!
+
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="_2Hkk1T39xw4RMQ _3TTqkG5muwOzqZ ZOUktZwsING7-0 _3LWeD13GUCngAu" data-test-id="header-create-menu-button" type="button" aria-label="Create board or Workspace">...</button> is not clickable at point (1238, 20). Other element would receive the click: <div class="_343EhxI8lu8-ih _2E51xGpnYJSdNA _25mU3FaRo7l95D">...</div>
+  (Session info: chrome=92.0.4515.131)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-V8HD5F2', ip: '192.168.1.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60199}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a16bf4b8b1a0712e4acef6fd42bb24e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.telran.qa28.skelon.framework.HelperBase.click(HelperBase.java:18)
+	at com.telran.qa28.skelon.framework.HelperBase.clickOnPlusButton(HelperBase.java:43)
+	at com.telran.qa28.skelon.tests.BoardCreationTests.boardCreationTestDataProviderCSV(BoardCreationTests.java:108)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+18:38:05 ERROR c.t.q.s.tests.TestBase$MyListener - screenshot - ScreenShots/screen-1628869.png
+18:38:05 INFO  c.telran.qa28.skelon.tests.TestBase - Test boardCreationTestDataProviderCSV finished
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

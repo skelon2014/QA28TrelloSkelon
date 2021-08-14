@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
 import java.util.NoSuchElementException;
 
 public class HelperBase {
@@ -32,6 +33,15 @@ public class HelperBase {
             wd.findElement(locator).sendKeys(text);
         }
 
+    }
+    public void attachFile(By locator, File file) {
+      /*  if (texte. != null) {
+            click(locator);
+            wd.findElement(locator).clear();
+            wd.findElement(locator).sendKeys(text);
+        }*/
+    wd.findElement(locator).sendKeys(file.getAbsolutePath());
+    click(By.xpath("//span[normalize-space()='Upload']"));
     }
 
     public void waitForElement(By locator, int timeOut) {

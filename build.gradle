@@ -1,3 +1,5 @@
+import java.time.temporal.TemporalAccessor
+
 plugins {
     id 'java'
 }
@@ -12,8 +14,60 @@ repositories {
 dependencies {
     implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
     implementation 'org.testng:testng:7.1.0'
+    implementation 'ch.qos.logback:logback-classic:1.2.5'
 }
 
 test {
     useTestNG()
 }
+
+task debug(type: Test){
+    useTestNG{
+        suites 'src/test/resources/testng-debug.xml'
+    }
+    if(project.hasProperty('target')){
+        systemProperty 'target', "${target}"
+    }
+
+}
+task sanity(type: Test){
+    useTestNG{
+        suites 'src/test/resources/testng-sanity.xml'
+    }
+
+    if(project.hasProperty('browser')){
+        systemProperty 'browser', "${browser}"
+    }
+    if(project.hasProperty('target')){
+        systemProperty 'target', "serg"
+    }
+}
+
+task sanitySerg(type: Test){
+    useTestNG{
+        suites 'src/test/resources/testng-sanity.xml'
+    }
+
+    if(project.hasProperty('browser')){
+        systemProperty 'browser', "firefox"
+    }
+
+        systemProperty 'target', "serg"
+
+}
+
+
+task clearBoard(type: Test){
+    useTestNG{
+        suites 'src/test/resources/testng-cleanBoard.xml'
+    }
+    if(project.hasProperty('browser')){
+        systemProperty 'browser', "${browser}"
+    }
+    if(project.hasProperty('target')){
+        systemProperty 'target', "serg"
+    }
+
+}
+//=========================================
+

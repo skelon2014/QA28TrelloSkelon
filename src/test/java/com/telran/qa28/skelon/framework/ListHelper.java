@@ -22,7 +22,7 @@ public class ListHelper extends HelperBase {
     }
 
     public boolean isThereAList() {
-        return wd.findElements(By.cssSelector(".placeholder")).size() > 1;
+        return wd.findElements(By.cssSelector(".placeholder")).size() > 0;
     }
 
 

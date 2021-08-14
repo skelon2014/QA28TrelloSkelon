@@ -10,8 +10,11 @@ public class BoardModificationTests extends TestBase{
         if (!app.session().isAvatarPresent()) {
             app.session().login("skelon@bk.ru", "Sand2@14");
         }
-        if(app.board().isThereABoard()){
+      /*  if(app.board().isThereABoard()){
             app.board().createBoard();
+        }*/
+        if(!app.board().isOnTheBoardsPage()){
+            app.board().returnOnHomePage();
         }
     }
     @Test

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.qa28.skelon.tests.UserModificationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-14T09:58:29" hostname="DESKTOP-V8HD5F2" time="8.696">
+  <properties/>
+  <testcase name="testChangeUserAvatar" classname="com.telran.qa28.skelon.tests.UserModificationTest" time="8.696"/>
+  <system-out><![CDATA[12:57:59 INFO  c.telran.qa28.skelon.tests.TestBase - Test testChangeUserAvatar started with parametres - []
+12:57:59 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-member-menu-button']
+12:58:09 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-member-menu-button'] found
+12:58:09 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //a[@href='/login']
+12:58:09 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //a[@href='/login'] found
+12:58:09 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@name = 'user']
+12:58:12 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@name = 'user'] found
+12:58:12 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@name = 'user']
+12:58:12 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@name = 'user'] found
+12:58:12 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@name = 'user']
+12:58:12 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@name = 'user'] found
+12:58:14 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //input[@id='login']
+12:58:14 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //input[@id='login'] found
+12:58:17 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@name = 'password']
+12:58:17 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@name = 'password'] found
+12:58:17 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@name = 'password']
+12:58:17 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@name = 'password'] found
+12:58:17 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@name = 'password']
+12:58:17 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@name = 'password'] found
+12:58:17 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //button[@id='login-submit']
+12:58:17 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //button[@id='login-submit'] found
+12:58:17 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+12:58:29 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+12:58:29 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [data-test-id='header-member-menu-button']
+12:58:29 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [data-test-id='header-member-menu-button'] found
+12:58:29 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [data-test-id='header-member-menu-profile']
+12:58:29 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [data-test-id='header-member-menu-profile'] found
+12:58:29 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [href$='manage-profile']
+12:58:30 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [href$='manage-profile'] found
+12:58:35 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [data-test-selector='profile-avatar']
+12:58:35 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [data-test-selector='profile-avatar'] found
+12:58:35 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [data-test-selector='trigger-avatar-picker']
+12:58:35 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [data-test-selector='trigger-avatar-picker'] found
+12:58:35 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [id=image-input]
+12:58:36 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [id=image-input] found
+12:58:36 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //span[normalize-space()='Upload']
+12:58:36 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //span[normalize-space()='Upload'] found
+12:58:37 INFO  c.telran.qa28.skelon.tests.TestBase - Test testChangeUserAvatar finished
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
