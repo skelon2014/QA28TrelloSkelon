@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
@@ -97,6 +98,16 @@ public class HelperBase {
         wd.switchTo().window(tabs.get(1));
         wd.navigate().to("https://mail.ru");
         Thread.sleep(10000);
+
+    }
+
+    public void selectFromDropDownByIndex(By locator, int index){
+        new Select(wd.findElement(locator)).selectByIndex(index);
+
+    }
+
+    public void selectFromDropDownByText(By locator, String text){
+        new Select(wd.findElement(locator)).selectByVisibleText("text");
 
     }
 
