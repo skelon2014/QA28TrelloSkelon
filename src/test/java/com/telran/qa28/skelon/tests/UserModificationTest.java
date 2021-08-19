@@ -14,7 +14,15 @@ public class UserModificationTest extends TestBase {
             app.board().returnOnHomePage();
         }
     }
+//open new page/window
+    @Test
+    public void test() throws InterruptedException {
+        app.session().openTabAndSwitchToIt();
+    }
 
+    //open in drop window
+
+//=============================================
     @Test
     public void testChangeUserAvatar() throws InterruptedException {
         app.session().clickOnAvatar();

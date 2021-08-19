@@ -1,11 +1,14 @@
 package com.telran.qa28.skelon.framework;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 public class HelperBase {
@@ -83,4 +86,18 @@ public class HelperBase {
     public void confirmAction() {
         click(By.cssSelector(".js-confirm"));
     }
+
+//====================//open new page/window======================================================
+    public void openTabAndSwitchToIt() throws InterruptedException {//open new page and switch to it
+
+        ((JavascriptExecutor)wd).executeScript("window.open()");
+       // Thread.sleep(10000);
+        List<String>tabs = new ArrayList<>(wd.getWindowHandles());
+
+        wd.switchTo().window(tabs.get(1));
+        wd.navigate().to("https://mail.ru");
+        Thread.sleep(10000);
+
+    }
+
 }

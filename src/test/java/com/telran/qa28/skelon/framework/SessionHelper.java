@@ -87,6 +87,7 @@ public class SessionHelper extends HelperBase {
         ArrayList<String> tabs = new ArrayList<>(wd.getWindowHandles());
         wd.switchTo().window(tabs.get(1));
     }
+    //
 
     public void returnToTrelloFromAtlassian() throws InterruptedException {
         List<String> tabs = new ArrayList<>(wd.getWindowHandles());
