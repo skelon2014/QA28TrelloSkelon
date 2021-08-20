@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.qa28.skelon.tests.LoginTrelloTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-19T20:13:36" hostname="DESKTOP-V8HD5F2" time="23.99">
+  <properties/>
+  <testcase name="loginTest" classname="com.telran.qa28.skelon.tests.LoginTrelloTest" time="23.99"/>
+  <system-out><![CDATA[23:13:26 INFO  c.telran.qa28.skelon.tests.TestBase - Test loginTest started with parametres - []
+23:13:26 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-member-menu-button']
+23:13:36 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-member-menu-button'] found
+23:13:36 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //a[@href='/login']
+23:13:36 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //a[@href='/login'] found
+23:13:36 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@name = 'user']
+23:13:38 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@name = 'user'] found
+23:13:38 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@name = 'user']
+23:13:38 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@name = 'user'] found
+23:13:38 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@name = 'user']
+23:13:38 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@name = 'user'] found
+23:13:38 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //input[@id='login']
+23:13:38 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //input[@id='login'] found
+23:13:40 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@name = 'password']
+23:13:42 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@name = 'password'] found
+23:13:42 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@name = 'password']
+23:13:42 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@name = 'password'] found
+23:13:42 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@name = 'password']
+23:13:42 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@name = 'password'] found
+23:13:42 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //button[@id='login-submit']
+23:13:42 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //button[@id='login-submit'] found
+23:13:42 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //ul[@class = 'boards-page-board-section-list']
+23:13:59 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //ul[@class = 'boards-page-board-section-list'] found
+23:14:00 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //ul[@class = 'boards-page-board-section-list']
+23:14:00 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //ul[@class = 'boards-page-board-section-list'] found
+23:14:00 INFO  c.telran.qa28.skelon.tests.TestBase - Test loginTest finished
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
