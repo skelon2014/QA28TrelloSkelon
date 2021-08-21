@@ -117,6 +117,7 @@ public class BoardCreationTests extends TestBase {
         int after = app.board().getBoardsCount();
         System.out.println("Boards - " + after);
         Assert.assertEquals(after, before + 1);
+        
     }
 
 }
