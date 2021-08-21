@@ -9,13 +9,12 @@
                     <include name="loginTest"/>
                     <exclude name="logoutTest"/>
                 </methods>
-
             </class>
-            <class name="com.telran.qa28.skelon.tests.BoardCreationTests"/>
-            <class name="com.telran.qa28.skelon.tests.BoardModificationTests"/>
-            <class name="com.telran.qa28.skelon.tests.ListCreationTest"/>
-            <class name="com.telran.qa28.skelon.tests.CardCreationTest"/>
-            <class name="com.telran.qa28.skelon.tests.BoardDeletionTests"/>
+<!--        <class name="com.telran.qa28.skelon.tests.BoardCreationTests"/>-->
+<!--             <class name="com.telran.qa28.skelon.tests.BoardModificationTests"/>-->
+ <!--            <class name="com.telran.qa28.skelon.tests.ListCreationTest"/>-->
+ <!--            <class name="com.telran.qa28.skelon.tests.CardCreationTest"/>-->
+ <!--            <class name="com.telran.qa28.skelon.tests.BoardDeletionTests"/>-->
         </classes>
     </test>
 </suite>
