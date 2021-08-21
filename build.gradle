@@ -26,10 +26,10 @@ task debug(type: Test){
         suites 'src/test/resources/testng-debug.xml'
     }
     if(project.hasProperty('target')){
-        systemProperty 'target', "${target}"
+        systemProperty 'target', "serg"
     }
     if(project.hasProperty('browser')){
-        systemProperty 'browser', "serg"
+        systemProperty 'browser', "${browser}"
     }
 
 

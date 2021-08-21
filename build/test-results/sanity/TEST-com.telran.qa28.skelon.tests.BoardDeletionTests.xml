@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.qa28.skelon.tests.BoardDeletionTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-21T12:19:21" hostname="DESKTOP-V8HD5F2" time="19.377">
+  <properties/>
+  <testcase name="testBoardDeletion" classname="com.telran.qa28.skelon.tests.BoardDeletionTests" time="19.377"/>
+  <system-out><![CDATA[15:18:50 INFO  c.telran.qa28.skelon.tests.TestBase - Test testBoardDeletion started with parametres - []
+15:18:50 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@data-test-id='header-member-menu-button']
+15:19:00 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@data-test-id='header-member-menu-button'] found
+15:19:00 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //a[@href='/login']
+15:19:00 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //a[@href='/login'] found
+15:19:03 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@name = 'user']
+15:19:03 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@name = 'user'] found
+15:19:03 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@name = 'user']
+15:19:03 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@name = 'user'] found
+15:19:03 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@name = 'user']
+15:19:03 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@name = 'user'] found
+15:19:05 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //input[@id='login']
+15:19:05 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //input[@id='login'] found
+15:19:08 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@name = 'password']
+15:19:08 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@name = 'password'] found
+15:19:08 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@name = 'password']
+15:19:08 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@name = 'password'] found
+15:19:08 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[@name = 'password']
+15:19:08 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[@name = 'password'] found
+15:19:08 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //button[@id='login-submit']
+15:19:08 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //button[@id='login-submit'] found
+15:19:08 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+15:19:21 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+15:19:21 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+15:19:21 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+15:19:21 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+15:19:21 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+15:19:25 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+15:19:25 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+15:19:25 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+15:19:25 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+15:19:26 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: .js-show-sidebar
+15:19:27 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: .js-show-sidebar found
+15:19:28 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: .js-show-sidebar
+15:19:28 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: .js-show-sidebar found
+15:19:28 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: .js-open-more
+15:19:28 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: .js-open-more found
+15:19:28 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [title='QR Code']
+15:19:38 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [title='QR Code'] found
+15:19:38 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: .js-open-more
+15:19:38 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: .js-open-more found
+15:19:39 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: .js-close-board
+15:19:39 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: .js-close-board found
+15:19:39 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: .js-confirm
+15:19:39 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: .js-confirm found
+15:19:39 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: .js-delete
+15:19:39 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: .js-delete found
+15:19:39 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: .js-confirm
+15:19:39 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: .js-confirm found
+15:19:39 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+15:19:39 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+15:19:39 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.cssSelector: [aria-label='HouseIcon']
+15:19:39 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.cssSelector: [aria-label='HouseIcon'] found
+15:19:40 INFO  c.t.q.s.tests.TestBase$MyListener - Start search element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li
+15:19:41 INFO  c.t.q.s.tests.TestBase$MyListener - Element By.xpath: //*[contains(@class, 'boards-page-board-section-header-icon-default-image')]/../../../..//li found
+15:19:41 INFO  c.telran.qa28.skelon.tests.TestBase - Test testBoardDeletion finished
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
