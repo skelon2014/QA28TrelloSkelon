@@ -11,7 +11,7 @@
                 </methods>
 
             </class>
-            <class name="com.telran.qa28.skelon.tests.CardCreationTest"/>
+      <!--      <class name="com.telran.qa28.skelon.tests.CardCreationTest"/>-->
         </classes>
     </test>
 </suite>

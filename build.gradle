@@ -29,7 +29,7 @@ task debug(type: Test){
         systemProperty 'target', "serg"
     }
     if(project.hasProperty('browser')){
-        systemProperty 'browser', "${browser}"
+        systemProperty 'browser', "${firefox}"
     }
 
 
