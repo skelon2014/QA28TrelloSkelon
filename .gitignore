@@ -1,5 +1,5 @@
 .gradle
-/build/classes
+/build/
 /build/generated
 /build/resources
 /build/tmp
